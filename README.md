@@ -25,14 +25,22 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React is a JavaScript Library that makes it easier to build dynamic User Interfaces. It does this by abstracting away the complexities of interacting with the DOM to produce the results we want to see
 
 - [ ] What does it mean to _think_ in react?
+to be syntactically familiar with react and the terms it uses to produce desired results
 
 - [ ] Describe state.
+state is the current value of a variable storing data that is valuable to preserving the present state of your application
+state can change and will usually change depending on the conditional logic of your code so that the value can update its 
+current/present state if need be.
 
 - [ ] Describe props.
+props is an object with key:value pairs are written in the parent component as a JSX attribute of the child component like so;  ```<ChildComponent propName={value} />```
+the key (propName) is a property of the props object and gets passed as an argument (written as props.propName ) from the child component (by way of a props parameter) to the parent component. this allows the child component to inherit the value stored in that key value pair, written as a JSX attribute of the child component, from the parent component.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+side effects are functions that rerender a component when a change to state has been observed. The state to observe for changes is specified in the dependency array and if left empty will continue to re-render the component until stopped by an API limit.
 
 ## Project Set Up
 
